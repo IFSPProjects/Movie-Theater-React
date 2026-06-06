@@ -1,0 +1,20 @@
+.categories {
+    padding: 60px 40px;
+}
+
+.categories h2 {
+    margin-bottom: 24px;
+}
+
+.category-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+    padding: 14px 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .06);
+}

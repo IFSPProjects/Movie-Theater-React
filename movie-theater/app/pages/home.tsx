@@ -1,0 +1,56 @@
+import { Header } from "../components/header/Header";
+import { EventLoader } from "../components/event-card/EventLoader";
+import { Hero } from "../components/hero/Hero"
+import { Categories } from "../components/categories/Categories"
+
+const events = [
+  {
+    title: "Festival de Música 2025",
+    date: "15 Ago 2025",
+    location: "São Paulo",
+    image:
+      "https://images.unsplash.com/photo-1501386761578-eac5c94b800a",
+    price: "R$ 120",
+    link: "https://www.temporary-url.com/0DB1D0",
+  },
+  {
+    title: "Stand Up Comedy Night",
+    date: "22 Ago 2025",
+    location: "Rio de Janeiro",
+    image:
+      "https://images.unsplash.com/photo-1527224538127-2104bb71c51b",
+    price: "R$ 60",
+    link: "https://www.temporary-url.com/0DB1D0",
+  },
+  {
+    title: "Final do Campeonato",
+    date: "01 Set 2025",
+    location: "Belo Horizonte",
+    image:
+      "https://images.unsplash.com/photo-1517466787929-bc90951d0974",
+    price: "R$ 90",
+    link: "https://www.temporary-url.com/0DB1D0",
+  },
+];
+
+export function HomePage() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Categories />
+
+        <section className="events">
+          <h2>Eventos em Destaque</h2>
+
+          <div className="events-grid">
+          <EventLoader
+            qnt={2}
+          />
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
